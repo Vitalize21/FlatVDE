@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="VitalizeDrive">
+      <UniqueIdentifier>{dd960807-0c0e-401d-b22c-34aaf7a0cdb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{e577585f-4f76-4c68-b06e-37c411d08fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\Input">
+      <UniqueIdentifier>{4e6a1591-df74-4149-8297-582237112a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\Utility">
+      <UniqueIdentifier>{41983522-8d96-4e83-aaeb-75a4a3ebfa62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\VitalizeScene">
+      <UniqueIdentifier>{c30cb248-1351-440c-9562-d7c77a7c0eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\MainSystem">
+      <UniqueIdentifier>{85666c91-9864-4ba5-9c24-cd6f997786e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\External">
+      <UniqueIdentifier>{5bc6da85-73af-4de4-9a2f-97035959ebbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\External\imgui">
+      <UniqueIdentifier>{352d34c1-e0aa-4c4f-af7a-00a4675dee85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VitalizeDrive\External\ogg">
+      <UniqueIdentifier>{0e6753e4-03ad-41ba-a608-19bac3d7e8fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VitalizeDevelopmentEnv.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\KeySet.h">
+      <Filter>VitalizeDrive\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\number.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\staticUtility.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\script.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeBitUtility.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeScene.h">
+      <Filter>VitalizeDrive\VitalizeScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeSystem.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\json11.hpp">
+      <Filter>VitalizeDrive\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\WICTextureLoader.h">
+      <Filter>VitalizeDrive\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Application\SourceCode\sceneMain.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\ScreenManager.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\TouchControls.h">
+      <Filter>VitalizeDrive\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\ImguiWrapper.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imstb_rectpack.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imstb_textedit.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imstb_truetype.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imconfig.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imgui.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imgui_impl_dx11.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imgui_impl_win32.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\imgui_internal.h">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\CheckMemoryLeak.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeStringRenderer.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\Vitalize2DObj.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeAudio.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeDefine.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeFramework.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeMath.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeParticle2D.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeSceneBase.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeShapes2D.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggVorbisFile.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggVorbisMemory.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggVorbisResource.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\os_types.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\PCMDecoder.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\PCMPlayer.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\vorbisenc.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\vorbisfile.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\codec.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\DixComPtr.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\DixSmartPtr.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\ogg.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggDecoder.h">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeHomeScene.h">
+      <Filter>VitalizeDrive\VitalizeScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeGameObject.h">
+      <Filter>VitalizeDrive\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Application\SourceCode\GlobalField.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Application\SourceCode\GlobalInclude.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\textLoader.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\AppSceneMediator.h">
+      <Filter>VitalizeDrive</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VitalizeDrive\SystemSource\easing.h">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VitalizeDevelopmentEnv.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="VitalizeDevelopmentEnv.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VitalizeDevelopmentEnv.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\SystemSource\staticUtility.cpp">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\json11.cpp">
+      <Filter>VitalizeDrive\External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\WICTextureLoader.cpp">
+      <Filter>VitalizeDrive\External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Application\SourceCode\sceneMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\imgui_widgets.cpp">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\imgui.cpp">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\imgui_draw.cpp">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\imgui_impl_dx11.cpp">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\imgui_impl_win32.cpp">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\imgui_tables.cpp">
+      <Filter>VitalizeDrive\External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\ogg\OggVorbisMemory.cpp">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\ogg\PCMDecoder.cpp">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\ogg\PCMPlayer.cpp">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\ogg\OggDecoder.cpp">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\External\ogg\OggVorbisFile.cpp">
+      <Filter>VitalizeDrive\External\ogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\SystemSource\AppSceneMediator.cpp">
+      <Filter>VitalizeDrive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VitalizeDrive\SystemSource\easing.cpp">
+      <Filter>VitalizeDrive\Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

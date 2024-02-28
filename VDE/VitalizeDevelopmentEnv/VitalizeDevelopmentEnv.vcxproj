@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6170389f-947a-4fa6-866f-04665c58a5f7}</ProjectGuid>
+    <RootNamespace>VitalizeDevelopmentEnv</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(WindowsSDK_LibraryPath_x86)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x86)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(WindowsSDK_LibraryPath_x86)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x86)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application\SourceCode;$(SolutionDir)VitalizeDrive\SystemSource;$(SolutionDir)VitalizeDrive\External;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;6387;26495</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxguid.lib;VitalizeMath.lib;script.lib;textLoader.lib;Vitalize2DObj.lib;VitalizeFramework.lib;VitalizeScene.lib;VitalizeShapes2D.lib;VitalizeSystem.lib;VitalizeBitUtility.lib;ScreenManager.lib;ImguiWrapper.lib;VitalizeParticle2D.lib;VitalizeStringRenderer.lib;VitalizeAudio.lib;VitalizeGameObject.lib;KeySet.lib;TouchControls.lib;VitalizeHomeScene.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)VitalizeDrive\Core\Debug;$(SolutionDir)VitalizeDrive\Lib\OggVorbis\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application\SourceCode;$(SolutionDir)VitalizeDrive\SystemSource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4005;6387;26495</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)VitalizeDrive\Core\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxguid.lib;animationCreateScene.lib;ButtonTile.lib;homeTile.lib;MapChipCreaterScene.lib;MovingTile.lib;numberPicker.lib;script.lib;selectionFrame.lib;SingleAnimCreaterScene.lib;textLoader.lib;textureSelector.lib;UICreaterScene.lib;ViewerScene.lib;Vitalize2DAnimObj.lib;Vitalize2DObj.lib;VitalizeFramework.lib;VitalizeScene.lib;VitalizeShapes2D.lib;VitalizeSystem.lib;VitalizeTile.lib;VitalizeToolBaseScene.lib;DebugLog.lib;VitalizeBitUtility.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Application\SourceCode\GlobalField.h" />
+    <ClInclude Include="..\Application\SourceCode\GlobalInclude.h" />
+    <ClInclude Include="..\Application\SourceCode\sceneMain.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imconfig.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imgui.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imgui_impl_dx11.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imgui_impl_win32.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imgui_internal.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imstb_rectpack.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imstb_textedit.h" />
+    <ClInclude Include="..\VitalizeDrive\External\imstb_truetype.h" />
+    <ClInclude Include="..\VitalizeDrive\External\json11.hpp" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\codec.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\DixComPtr.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\DixSmartPtr.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\ogg.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggDecoder.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggVorbisFile.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggVorbisMemory.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\OggVorbisResource.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\os_types.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\PCMDecoder.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\PCMPlayer.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\vorbisenc.h" />
+    <ClInclude Include="..\VitalizeDrive\External\ogg\vorbisfile.h" />
+    <ClInclude Include="..\VitalizeDrive\External\WICTextureLoader.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\AppSceneMediator.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\CheckMemoryLeak.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\easing.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\ImguiWrapper.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\KeySet.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\number.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\ScreenManager.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\script.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\staticUtility.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\textLoader.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\TouchControls.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\Vitalize2DObj.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeAudio.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeBitUtility.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeDefine.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeFramework.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeGameObject.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeHomeScene.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeMath.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeParticle2D.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeScene.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeSceneBase.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeShapes2D.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeStringRenderer.h" />
+    <ClInclude Include="..\VitalizeDrive\SystemSource\VitalizeSystem.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VitalizeDevelopmentEnv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Application\SourceCode\sceneMain.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\imgui.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\imgui_draw.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\imgui_tables.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\imgui_widgets.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\json11.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\ogg\OggDecoder.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\ogg\OggVorbisFile.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\ogg\OggVorbisMemory.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\ogg\PCMDecoder.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\ogg\PCMPlayer.cpp" />
+    <ClCompile Include="..\VitalizeDrive\External\WICTextureLoader.cpp" />
+    <ClCompile Include="..\VitalizeDrive\SystemSource\AppSceneMediator.cpp" />
+    <ClCompile Include="..\VitalizeDrive\SystemSource\easing.cpp" />
+    <ClCompile Include="..\VitalizeDrive\SystemSource\staticUtility.cpp" />
+    <ClCompile Include="VitalizeDevelopmentEnv.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VitalizeDevelopmentEnv.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico" />
+    <Image Include="VitalizeDevelopmentEnv.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
